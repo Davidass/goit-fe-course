@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", "Arial" sans-serif;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 24px;
+}
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+.site-navigation {
+  font-size: 14px;
+}
+
