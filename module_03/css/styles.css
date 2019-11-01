@@ -1,10 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Ubuntu", "Arial" sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-family: "Playfair Display", serif;
   color: #626262;
   font-size: 14px;
@@ -12,10 +20,100 @@ body {
   line-height: 24px;
 }
 .wrapper {
-    width: 900px;
-    margin: 0 auto;
+  width: 901px;
+  margin: 0 auto;
+  text-align: center;
 }
 .site-navigation {
   font-size: 14px;
+  list-style: none;
+}
+.site-navigation a {
+  color: #626262;
+  font-weight: 400px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 24px;
+}
+/* .site-navigation ul {
+  text-align: center;
+} */
+.site-navigation li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 77px;
+  margin-right: 102px;
+  margin-bottom: 100px;
+}
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+.site-navigation li a:hover,
+.site-navigation li a:focus {
+  color: #03a9f4;
+}
+.main-content {
+  font-size: 0;
+}
+.content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.content {
+  margin-bottom: avto;
+}
+.content {
+  display: inline-block;
+  width: 420px;
+  font-size: 14px;
+  margin-right: 60px;
+  margin-bottom: 135px;
+  vertical-align: top;
+}
+.content img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.content:nth-last-child(-n + 2) {
+  margin: 0;
+  margin-bottom: 55px;
 }
 
+.content:nth-child(even) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.content-list__name {
+  font: 300 14px "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-top: 32px;
+  margin-bottom: 31px;
+  text-align: left;
+}
+.content h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.content-list__about {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 0px;
+}
+.button {
+  display: block;
+  width: 165px;
+  height: 65px;
+  font-size: 0;
+  border: 1px solid;
+  margin: 0;
+  padding: 20px 35px;
+  margin-bottom: 75px;
+}
