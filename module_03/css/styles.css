@@ -18,13 +18,12 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Ubuntu", sans-serif;
-  font-family: "Playfair Display", serif;
+body, p, button {
+  font-family: 'Playfair Display', serif;
   color: #626262;
   font-size: 14px;
-  font-weight: 400px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -59,15 +58,6 @@ body {
 }
 .site-navigation a {
   color: #626262;
-  font-weight: 400px;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 24px;
-}
-
-.site-navigation a {
-  color: #626262;
-  font-weight: 400px;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 24px;
@@ -125,7 +115,7 @@ body {
 }
 .content h2 {
   font-size: 30px;
-  font-weight: 400;
+  /* font-weight: 400; */
   margin-bottom: 40px;
   text-align: left;
 }
@@ -135,6 +125,7 @@ body {
   line-height: 24px;
   text-align: justify;
 }
+
 
 .download {
   display: block;
