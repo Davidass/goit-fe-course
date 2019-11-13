@@ -1,4 +1,5 @@
 /* * {
+
   outline: 1px solid red;
 } */
 
@@ -20,59 +21,106 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
-  color: #626262;
-  font-size: 14px;
-  line-height: 24px;
+  color: #555252;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 400;
 }
 
-/* .clearfix::after {
+.wrapper {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+/* Header menu */
+
+.menu-wrapper {
+  outline: 2px solid red;
+  padding-top: 38px;
+  padding-bottom: 111px;
+
+}
+
+.clearfix::after {
   display: table;
   content: '';
   clear: both;
 }
 
-.wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+.logo a {
+  /* outline: 2px solid blue; */
+  font-family: "Roboto", sans-serif;
+  color: #555252;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: left;
+}
+.logo a::first-letter {
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #1abc9c;
 }
 
-.menu-wrapper {
-  margin-bottom: 105px;
+.logo a:hover,
+.logo a:focus {
+  color: #1abc9c;
 }
 
-.navigation {
-  padding: 75px 0 0;
-}
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
+.menu__navigation {
+  font-family: "Open Sans", sans-serif;
+  width: 470px;
+  margin-top: 5px;
   font-size: 14px;
   list-style: none;
-  text-align: center;
-  vertical-align: middle;
+  float: right;
+}
+.menu__navigation a {
+  outline: 2px solid rgb(43, 255, 0);
+  display: block;
+  color: #0f0101;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+
+.menu__navigation li {
+  float: left; 
+  margin-right: 32px;
+}
+.menu__navigation li:last-child {
+  margin-right: 0px;
+
+
+
+.menu__navigation li a:hover,
+.menu__navigationon li a:focus {
+  color: #1abc9c
 }
 
-.site-navigation li {
+
+
+/* .navigation {
+  
+} */
+
+}
+
+/* .site-navigation li {
   display: inline-block;
 }
 
 .site-navigation li:not(:last-child) {
   margin-right: 77px;
-}
-.site-navigation a {
-  color: #626262;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 24px;
-}
+} */
 
-.site-navigation li a:hover,
-.site-navigation li a:focus {
-  color: #03a9f4;
-}
+
 
 .content {
   list-style: none;
@@ -142,4 +190,4 @@ body {
   margin-bottom: 75px;
   background-color: #ffffff;
   cursor: pointer;
-} */
+}
