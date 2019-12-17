@@ -10,14 +10,14 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRoboto:300,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- Header menu -->
     <header class="header">
-      <div class="wrapper clearfix">
+      <div class="container clearfix">
         <div class="logo">
           <a href="#">Mart</a>
         </div>
@@ -33,15 +33,19 @@
         </nav>
       </div>
     </header>
-    <!-- slaider -->
+    <!-- Slaider -->
     <main class="inner">
       <section class="container__slider">
         <div class="container__button">
-          <button class="slider-button__left-arrow"></button>
-          <button class="slider-button__right-arrow"></button>
+          <button class="slider-ctrl slider-ctrl-prev">
+            <span class="pe-7s-angle-left"></span>
+          </button>
+          <button class="slider-ctrl slider-ctrl-next">
+            <span class="pe-7s-angle-right"></span>
+          </button>
         </div>
-        <ul>
-          <li class="foto_slider">
+        <ul class="slider">
+          <li class="foto__slider">
             <img
               src="./img/slide4.jpg"
               alt="slide-img"
@@ -55,13 +59,39 @@
           </li>
         </ul>
       </section>
-      <!--  New Collection -->
+      <!-- New Collection -->
       <section class="products">
         <div class="container">
           <h2 class="name__card">New Collection</h2>
           <ul class="products__card clearfix">
             <li class="product__list">
               <div class="image__box">
+                <div class="overlay">
+                  <div class="overlay-icons">
+                    <ul>
+                      <li>
+                        <button type="button" class="pe-7s-like">
+                          <span class="visually-hidden">Like</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="pe-7s-shuffle">
+                          <span class="visually-hidden">Shuffle</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="pe-7s-clock">
+                          <span class="visually-hidden">Clock</span>
+                        </button>
+                      </li>
+                      <li class="icons clearfix">
+                        <button type="button" class="pe-7s-cart">
+                          <p class="cart">Add to cart</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <a href="#" class="logo__products"
                   ><img
                     src="./img/category-2.jpg"
@@ -70,32 +100,6 @@
                     height="284"
                   />
                 </a>
-                <div class="modal">
-                  <div class="icons">
-                    <ul>
-                      <li>
-                        <button type="button" class="pe-7s-like">
-                          <span class="visually-hidden">Like</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="pe-7s-shuffle">
-                          <span class="visually-hidden">Shuffle</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="pe-7s-clock">
-                          <span class="visually-hidden">Clock</span>
-                        </button>
-                      </li>
-                      <li class="icons clearfix">
-                        <button type="button" class="pe-7s-cart">
-                          <p class="cart">Add to cart</p>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
               <div class="product__name clearfix">
                 <h3 class="name"><a href="#">Blue Tshirt</a></h3>
@@ -104,6 +108,32 @@
             </li>
             <li class="product__list">
               <div class="image__box">
+                <div class="overlay">
+                  <div class="overlay-icons">
+                    <ul>
+                      <li>
+                        <button type="button" class="pe-7s-like">
+                          <span class="visually-hidden">Like</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="pe-7s-shuffle">
+                          <span class="visually-hidden">Shuffle</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="pe-7s-clock">
+                          <span class="visually-hidden">Clock</span>
+                        </button>
+                      </li>
+                      <li class="icons clearfix">
+                        <button type="button" class="pe-7s-cart">
+                          <p class="cart">Add to cart</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <a href="#" class="logo__products"
                   ><img
                     src="./img/category-1.jpg"
@@ -112,32 +142,6 @@
                     height="284"
                   />
                 </a>
-                <div class="modal">
-                  <div class="icons">
-                    <ul>
-                      <li>
-                        <button type="button" class="pe-7s-like">
-                          <span class="visually-hidden">Like</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="pe-7s-shuffle">
-                          <span class="visually-hidden">Shuffle</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="pe-7s-clock">
-                          <span class="visually-hidden">Clock</span>
-                        </button>
-                      </li>
-                      <li class="icons clearfix">
-                        <button type="button" class="pe-7s-cart">
-                          <p class="cart">Add to cart</p>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
               <div class="product__name clearfix">
                 <h3 class="name"><a href="#">Woman Shirt</a></h3>
@@ -146,6 +150,32 @@
             </li>
             <li class="product__list">
               <div class="image__box">
+                <div class="overlay">
+                  <div class="overlay-icons">
+                    <ul>
+                      <li>
+                        <button type="button" class="pe-7s-like">
+                          <span class="visually-hidden">Like</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="pe-7s-shuffle">
+                          <span class="visually-hidden">Shuffle</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="pe-7s-clock">
+                          <span class="visually-hidden">Clock</span>
+                        </button>
+                      </li>
+                      <li class="icons clearfix">
+                        <button type="button" class="pe-7s-cart">
+                          <p class="cart">Add to cart</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <a href="#" class="logo__products"
                   ><img
                     src="./img/category-4.jpg"
@@ -154,32 +184,6 @@
                     height="284"
                   />
                 </a>
-                <div class="modal">
-                  <div class="icons">
-                    <ul>
-                      <li>
-                        <button type="button" class="pe-7s-like">
-                          <span class="visually-hidden">Like</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="pe-7s-shuffle">
-                          <span class="visually-hidden">Shuffle</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="pe-7s-clock">
-                          <span class="visually-hidden">Clock</span>
-                        </button>
-                      </li>
-                      <li class="icons clearfix">
-                        <button type="button" class="pe-7s-cart">
-                          <p class="cart">Add to cart</p>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
               <div class="product__name clearfix">
                 <h3 class="name"><a href="#">Yellow Tshirt</a></h3>
@@ -188,16 +192,8 @@
             </li>
             <li class="product__list">
               <div class="image__box">
-                <a href="#" class="logo__products"
-                  ><img
-                    src="./img/category-3.png"
-                    alt="Blue Tshirt"
-                    width="255"
-                    height="284"
-                  />
-                </a>
-                <div class="modal">
-                  <div class="icons">
+                <div class="overlay">
+                  <div class="overlay-icons">
                     <ul>
                       <li>
                         <button type="button" class="pe-7s-like">
@@ -222,6 +218,14 @@
                     </ul>
                   </div>
                 </div>
+                <a href="#" class="logo__products"
+                  ><img
+                    src="./img/category-3.png"
+                    alt="Blue Tshirt"
+                    width="255"
+                    height="284"
+                  />
+                </a>
               </div>
               <div class="product__name clearfix">
                 <h3 class="name"><a href="#">Cool lingerie</a></h3>
